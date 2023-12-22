@@ -1,9 +1,11 @@
 # Development
 black
 pylint
-aiohttp
-SQLAlchemy
+aiohttp~=3.9.1
+SQLAlchemy~=2.0.23
 
 # Testing
-pytest
+pytest~=7.4.3
 pytest-asyncio
+testcontainers-postgres
+testcontainers
