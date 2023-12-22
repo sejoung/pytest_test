@@ -5,3 +5,4 @@ aiohttp
 
 # Testing
 pytest
+pytest-asyncio

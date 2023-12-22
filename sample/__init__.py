@@ -2,6 +2,7 @@
 import logging.config
 
 from .core import hmm
+from .gonaver import fetch_naver_comic
 
 __version__ = "0.1"
 

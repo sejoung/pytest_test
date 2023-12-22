@@ -1,5 +1,4 @@
 """ 네이버 코믹스 조회 API"""
-import asyncio
 
 import aiohttp
 
@@ -23,20 +22,3 @@ async def fetch_naver_comic():
             # JSON 형식으로 응답을 읽습니다.
             data = await response.json()
             return data
-
-
-async def main():
-    """비동기로 실행"""
-    naver_comic_data = await fetch_naver_comic()
-
-    if naver_comic_data:
-        # 여기에서 데이터를 활용하여 원하는 작업을 수행합니다.
-        print(naver_comic_data)
-        print(naver_comic_data["titleList"][4]["titleName"])
-    else:
-        print("Failed to fetch data.")
-
-
-# 이벤트 루프를 실행합니다.
-if __name__ == "__main__":
-    asyncio.run(main())
