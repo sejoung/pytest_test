@@ -1,14 +1,22 @@
+"""Module core function"""
+
+import logging
+
 from . import helpers
 
+logger = logging.getLogger("root")
 
-def get_hmm():
-    print("""Get a thought.""")
+
+def __get_hmm():
+    logger.info("""Get a thought.""")
     return "hmmm..."
 
 
 def hmm():
-    print("""Contemplation...""")
+    """로그 정보"""
+    logger.info("""Contemplation...""")
     if helpers.get_answer():
-        hmm = get_hmm()
-        print(hmm)
-        return hmm
+        result = __get_hmm()
+        logger.info(result)
+        return result
+    return None

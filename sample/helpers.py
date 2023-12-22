@@ -1,3 +1,10 @@
+"""Module helper functions."""
+import logging
+
+logger = logging.getLogger("root")
+
+
 def get_answer():
-    print("""Get an answer.""")
+    """Get answer"""
+    logger.info("""Get an answer.""")
     return True
