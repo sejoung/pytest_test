@@ -11,12 +11,11 @@ async def fetch_naver_comic():
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36",  # 여기에 사용자 에이전트 정보를 입력하세요.
+        "Chrome/120.0.0.0 Safari/537.36",
     }
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, headers=headers) as response:
-            # HTTP 응답 코드를 확인합니다.
             if response.status != 200:
                 print(f"Error: {response.status}")
                 return None
