@@ -20,3 +20,4 @@ pytest tests
 # 참고
 
 * [pytest doc](https://docs.pytest.org/en/stable)
+* [python-guide](https://docs.python-guide.org/writing/structure/)
