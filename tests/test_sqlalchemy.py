@@ -13,6 +13,7 @@ def test_sqlalchemy():
 
 
 def test_postgres_container():
+    """PostgreSQL 컨테이너 테스트"""
     postgres_container = PostgresContainer("postgres:9.5")
     with postgres_container as postgres:
         engine = sqlalchemy.create_engine(postgres.get_connection_url())
