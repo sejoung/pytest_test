@@ -1,7 +1,7 @@
 """Test hmm function in sample.core module"""
-import sample
+from sample import core
 
 
 def test_hmm():
     """Test hmm function"""
-    assert sample.hmm() == "hmmm..."
+    assert core.hmm() == "hmmm..."
