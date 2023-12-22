@@ -2,6 +2,7 @@
 black
 pylint
 aiohttp
+SQLAlchemy
 
 # Testing
 pytest
