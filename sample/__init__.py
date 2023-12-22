@@ -5,5 +5,5 @@ SAMPLE_VERSION = "0.1"
 
 
 def print_python_version():
-    """Print the Sample"""
+    """Print the Sample version"""
     print(SAMPLE_VERSION)
