@@ -5,3 +5,10 @@ profile = "black"
 include = '\.pyi?$|\.py$'
 # test 제외라면 아래 주석 해제
 #extend-exclude = '''.*tests.*'''
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
