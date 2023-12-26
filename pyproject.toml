@@ -1,2 +1,7 @@
 [tool.isort]
 profile = "black"
+
+[tool.black]
+include = '\.pyi?$|\.py$'
+# test 제외라면 아래 주석 해제
+#extend-exclude = '''.*tests.*'''

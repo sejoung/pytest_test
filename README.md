@@ -17,6 +17,12 @@ deactivate
 pytest tests
 ```
 
+
+```shell
+black --check ./
+```
+
+
 # 참고
 
 * [pytest doc](https://docs.pytest.org/en/stable)
